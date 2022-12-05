@@ -13,7 +13,7 @@ if (c>b && c>a)
 {
     Console.WriteLine(c);
 }
-else 
+if (b>c && b>a)  
 {
     Console.WriteLine(b);
 }
