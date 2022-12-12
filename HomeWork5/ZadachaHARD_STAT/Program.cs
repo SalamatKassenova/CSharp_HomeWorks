@@ -34,6 +34,7 @@ void MaxMin(int[] array)
     {
         mean = mean + array[i];
     }
+    mean = mean/count;
 
     Dictionary<string, int> finalArray = new Dictionary<string, int>();
     {
@@ -41,6 +42,7 @@ void MaxMin(int[] array)
         finalArray["Индекс макисмального значения"] = maxIndex;
         finalArray["Минимальное значение"] = min;
         finalArray["Индекс минимального значения"] = minIndex;
+        finalArray["Среднее арифместическое значение"] = mean;
     }
 
     foreach (var pair in finalArray)
